@@ -5,6 +5,13 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "YTEngineer",
-  plugins: [],
+  siteName: 'YTEngineer',
+  plugins: [
+    {
+      use: '~/plugins/ytailwind',
+      options: {
+        tailwindConfig: './tailwind.config.js',
+      },
+    },
+  ],
 };
