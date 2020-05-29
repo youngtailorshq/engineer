@@ -6,5 +6,7 @@
 
 module.exports = {
   siteName: "YTEngineer",
+  siteUrl: "https://youngtailorshq.github.io",
+  pathPrefix: "/engineer",
   plugins: [],
 };
