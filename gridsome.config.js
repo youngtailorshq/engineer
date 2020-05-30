@@ -13,5 +13,19 @@ module.exports = {
         tailwindConfig: './tailwind.config.js',
       },
     },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Blog',
+        baseDir: './src/content/blog',
+        pathPrefix: '/blog',
+        refs: {
+          category: {
+            typeName: 'Category',
+            create: true,
+          },
+        },
+      },
+    },
   ],
 };

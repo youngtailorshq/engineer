@@ -1,5 +1,6 @@
 module.exports = {
   purge: {
+    enabled: process.env.NODE_ENV === 'production',
     keyframes: true,
     content: [
       './src/**/*.vue',
