@@ -26,6 +26,16 @@ module.exports = {
             create: true,
           },
         },
+        plugins: [
+          [
+            'gridsome-plugin-remark-shiki',
+            {
+              theme: 'nord',
+              skipInline: false,
+              theme: require('./plugins/shiki/theme.json'),
+            },
+          ],
+        ],
       },
     },
   ],
