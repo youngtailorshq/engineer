@@ -19,6 +19,7 @@ module.exports = {
         typeName: 'Blog',
         baseDir: './src/content/blog',
         pathPrefix: '/blog',
+        template: './src/templates/BlogTemplate.vue',
         refs: {
           category: {
             typeName: 'Category',
