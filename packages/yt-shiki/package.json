@@ -1,0 +1,8 @@
+{
+  "name": "yt-shiki",
+  "main": "index.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "lodash.get": "^4.4.2"
+  }
+}

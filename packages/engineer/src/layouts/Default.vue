@@ -7,9 +7,7 @@
           class="h-screen w-full lg:w-1/5 fixed lg:sticky top-0 left-0 bottom-0 pt-16 lg:-mt-16 lg:block bg-white dark:bg-gray-900 lg:bg-transparent z-30 lg:border-r dark:border-gray-800"
         >
           <div class="container mx-auto overflow-auto h-full">
-            <div
-              class="lg:hidden flex-1 flex justify-center px-4 mt-8 mb-4 w-full"
-            >
+            <div class="lg:hidden flex-1 flex justify-center px-4 mt-8 mb-4 w-full">
               <SearchInput />
             </div>
             <ul class="lg:pl-0 p-4 lg:py-8 lg:pr-8">
@@ -22,8 +20,7 @@
                     :to="blog.path"
                     class="px-2 rounded font-medium py-1 block text-gray-600 dark:text-gray-500 hover:text-gray-800 dark-hover:text-gray-100"
                     exact-active-class="text-green-600 bg-green-100 hover:text-green-600 dark:text-green-200 dark:bg-green-900 dark-hover:text-green-200"
-                    >{{ blog.title }}</g-link
-                  >
+                  >{{ blog.title }}</g-link>
                 </li>
               </ul>
             </ul>
@@ -199,9 +196,5 @@ body {
   & > .filename {
     @apply absolute right-0 text-gray-600 font-light z-10 mr-2 mt-1 text-sm;
   }
-}
-
-pre.shiki {
-  @apply mb-10 mt-4 p-4 overflow-x-auto border rounded-sm;
 }
 </style>

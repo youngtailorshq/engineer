@@ -8,7 +8,7 @@ module.exports = {
   siteName: 'YTEngineer',
   plugins: [
     {
-      use: '~/plugins/ytailwind',
+      use: 'ytailwind',
       options: {
         tailwindConfig: './tailwind.config.js',
       },
@@ -17,7 +17,7 @@ module.exports = {
       use: '@gridsome/vue-remark',
       options: {
         typeName: 'Blog',
-        baseDir: './src/content/blog',
+        baseDir: './content/blog',
         pathPrefix: '/blog',
         template: './src/templates/BlogTemplate.vue',
         refs: {
@@ -28,11 +28,10 @@ module.exports = {
         },
         plugins: [
           [
-            'gridsome-plugin-remark-shiki',
+            'yt-shiki',
             {
-              theme: 'nord',
               skipInline: false,
-              theme: require('./plugins/shiki/theme.json'),
+              theme: require('./src/shiki_theme.json'),
             },
           ],
         ],
