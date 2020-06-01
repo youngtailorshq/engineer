@@ -6,11 +6,16 @@
     <div class="container mx-auto px-4 lg:px-8 flex-1">
       <div class="flex items-center justify-between h-16">
         <div class="w-1/6">
-          <g-link class="text-xl font-bold tracking-tight flex items-center flex-shrink-0">
+          <g-link
+            class="text-xl font-bold tracking-tight flex items-center flex-shrink-0"
+            to="/"
+          >
             <IconLogo class="h-8 w-auto mr-2" />YT Engineer
           </g-link>
         </div>
-        <div class="hidden flex-1 lg:flex justify-center ml-4 mr-2 lg:mx-8 w-4/6">
+        <div
+          class="hidden flex-1 lg:flex justify-center ml-4 mr-2 lg:mx-8 w-4/6"
+        >
           <SearchInput />
         </div>
         <div class="flex items-center justify-end w-1/6">

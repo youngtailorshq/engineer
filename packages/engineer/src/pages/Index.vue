@@ -1,29 +1,47 @@
 <template>
   <Layout>
+    <div class="py-4 lg:pt-8 lg:pb-4 lg:px-8 young-content">
+      <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+      <div class="flex items-center">
+        <g-image
+          alt="Example image"
+          src="~/favicon.png"
+          width="135"
+          class="mr-8"
+        />
+        <div>
+          <h2>Product development lovers</h2>
+          <p class="text-gray-600">
+            Not just develop, we love to see the beautiful products and willing
+            to hear customer feedback.
+          </p>
+        </div>
+      </div>
+      <h3>Our services</h3>
+      <BaseList :items="items" />
+    </div>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
-  }
-}
+    title: 'Hello, world!',
+  },
+  data() {
+    return {
+      items: [
+        'Product Development',
+        'Web Development',
+        'Mobile Development',
+        'UI & UX Design',
+        'Consulting & Maintainance',
+        'Cloud Setup',
+      ],
+    };
+  },
+};
 </script>
 
 <style>
