@@ -1,5 +1,6 @@
 module.exports = {
   purge: {
+    enabled: process.env.NODE_ENV === 'production',
     keyframes: true,
     content: [
       './src/**/*.vue',
@@ -48,7 +49,11 @@ module.exports = {
     },
   },
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark-gray': '#6A737D',
+      },
+    },
   },
   variants: {},
   plugins: [],
